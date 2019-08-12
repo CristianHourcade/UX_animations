@@ -1,0 +1,104 @@
+.bg-muted {
+    background-color: #eee;
+}
+
+.animador {
+    img {
+        height: 175px;
+        width: 150px;
+    }
+    .roca {
+        display: none;
+        .kenny2 {
+            height: 175px;
+            width: 150px;
+        }
+    }
+}
+
+.dead {
+    .inicioKenny {
+        z-index: 2;
+        animation: 2s matarKenny 1s;
+        animation-fill-mode: forwards;
+        img {
+            z-index: 9;
+            animation: 1s girarRoca 1s infinite;
+        }
+    }
+    .roca {
+        display: block;
+        animation: 1.5s roca;
+        animation-fill-mode: forwards;
+        position: absolute;
+        top: 15vh;
+    }
+    .kenny2 {
+        display: block;
+    }
+}
+
+.matarKenny,
+.revivirKenny {
+    background-image: linear-gradient(45deg, #ff0001, #bb0303);
+    color: white;
+    padding: 10px 27px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 9px -2px #940505;
+    border: 0px;
+}
+
+.revivirKenny {
+    border: 2px solid #ff0001;
+    color: #ff0001;
+    background: transparent;
+}
+
+@keyframes matarKenny {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(100%, -100%);
+    }
+}
+
+@keyframes roca {
+    0% {
+        transform: translate(-180%, 0%);
+    }
+    50% {
+        transform: translate(-120%, 0%);
+    }
+    100% {
+        transform: translate(355%, 0%);
+    }
+}
+
+@keyframes girarRoca {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.kenny-dead {
+    animation: estaMuerto 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes estaMuerto {
+    0% {
+        transform: translate(100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.btn-animations {
+    background-image: linear-gradient(45deg, #ff0001, #f15757);
+}
