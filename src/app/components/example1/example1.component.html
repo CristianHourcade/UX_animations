@@ -1,0 +1,32 @@
+<section id="mobile-bg">
+
+    <!-- Pantalla -->
+    <div id="mobile-screen">
+
+        <!-- Onbording -->
+        <div id="first_step">
+            <img id="apple" src="/assets/images/56-apple-512.png">
+        </div>
+
+        <div id="second_step">
+            <div id="animation_entranda"></div>
+            <div id="content" [ngClass]="{'tercer_step' : siguiente }">
+                <img src="/assets/images/happiness.png" style="filter:invert(1)!important;max-width:50%;    margin-top: 30%;">
+                <h2>Bienvenidos<br>
+                    <small> a la enchinchada!</small>
+                </h2>
+                <button class="btn-siguiente " (click)="siguiente = true;"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Botones -->
+    <div class="content_nav">
+        <img src="/assets/images/arrow-point-to-right.png ">
+    </div>
+    <div class="content_nav2">
+    </div>
+    <div class="content_nav3">
+    </div>
+</section>
