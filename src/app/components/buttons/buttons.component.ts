@@ -10,6 +10,8 @@ export class ButtonsComponent implements OnInit {
   isKennyAnimation : String;
   isKenny : String;
   isKennyTitle : String;
+  isSubmittedSuccess : Boolean = false;
+  isSubmittedError : Boolean = false;
 
   constructor(){
     this.isKenny = "kenny";

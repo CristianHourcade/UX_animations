@@ -27,29 +27,48 @@
     <div class="container">
         <div class="row">
             <div class="col-12 py-4 text-center">
-                <button *ngIf="isKennyTitle !== 'muerto'" class="matarKenny" (click)="matarKenny()">¡Matá a kenny!</button>
-                <button *ngIf="isKennyTitle === 'muerto'" class="revivirKenny" (click)="revivirKenny()">¡Reviví a kenny!</button>
+                <button *ngIf="isKennyTitle !== 'muerto'" class="matarKenny mr-2" (click)="matarKenny()">
+                    ¡Matá a kenny!
+                </button>
+                <button *ngIf="isKennyTitle === 'muerto'" class="revivirKenny mr-2" (click)="revivirKenny()">
+                    ¡Reviví a kenny!
+                </button>
+                <button class="baufest-btn enchinchada-btn success" [ngClass]="{'animate':isSubmittedSuccess}" (click)="isSubmittedSuccess = !isSubmittedSuccess">Submit</button>
+                <button class="baufest-btn enchinchada-btn error" [ngClass]="{'animate':isSubmittedError}" (click)="isSubmittedError = !isSubmittedError">Submit</button>
             </div>
         </div>
         <div class="row">
             <div class="col-12 mt-3 pb-4">
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'entry-left'">entry-left</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'entry-right'">entry-right</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'entry-top'">entry-top</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'entry-down'">entry-down</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'entry-left'">entry-left</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'entry-right'">entry-right</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'entry-top'">entry-top</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'entry-down'">entry-down</button>
 
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'opacity-in'">opacity-in</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'opacity-out'">opacity-out</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-45'">rotate-45</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-90'">rotate-90</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-135'">rotate-135</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-180'">rotate-180</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-360'">rotate-360</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'rotate-360-repeat'">rotate-360-repeat</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'opacity-in'">opacity-in</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'opacity-out'">opacity-out</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-45'">rotate-45</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-90'">rotate-90</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-135'">rotate-135</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-180'">rotate-180</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-360'">rotate-360</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'rotate-360-repeat'">rotate-360-repeat</button>
 
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'effect-bell'">effect-bell</button>
-                <button class="matarKenny btn-animations mr-2 mt-2" (click)="isKennyAnimation = 'effect-scale'">effect-scale</button>
-
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'effect-bell'">effect-bell</button>
+                <button class="matarKenny btn-animations mr-2 mt-2"
+                    (click)="isKennyAnimation = 'effect-scale'">effect-scale</button>
             </div>
         </div>
     </div>

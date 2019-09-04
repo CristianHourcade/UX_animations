@@ -1,8 +1,14 @@
-@import './assets/ux_animations/ux_animations.scss';
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .h-100 {
-    height: 100%;
+  height: 100%;
 }
 
 .w-100 {
-    width: 100%;
+  width: 100%;
 }
+
+@import "./assets/ux_animations/ux_animations.scss";
