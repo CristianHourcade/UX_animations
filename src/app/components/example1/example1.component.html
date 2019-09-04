@@ -15,18 +15,36 @@
                 <h2>Bienvenidos<br>
                     <small> a la enchinchada!</small>
                 </h2>
-                <button class="btn-siguiente " (click)="siguiente = true;"></button>
+                <button class="btn-siguiente " (click)="setearTercerTiempo()"></button>
             </div>
         </div>
+
+        <div class="div_tercerstep" [ngClass]="stepTercerActive">
+            <div class="cont-nav" (click)="isMenu = !isMenu">
+                <div class="nav-icon my-1 iconBar1{{isMenu}}"></div>
+                <div class="nav-icon my-1 iconBar2{{isMenu}}"></div>
+                <div class="nav-icon my-1 iconBar3{{isMenu}}"></div>
+            </div>
+            <!--- Example one to Load Bar --->
+            <div class="b">
+                <i class="ball"></i>
+            </div>
+
+            <div class="container">
+                <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+            </div>
+
+        </div>
+
+
 
     </div>
 
     <!-- Botones -->
-    <div class="content_nav">
-        <img src="/assets/images/arrow-point-to-right.png ">
-    </div>
+
     <div class="content_nav2">
     </div>
-    <div class="content_nav3">
-    </div>
+
 </section>
