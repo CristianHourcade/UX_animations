@@ -1,0 +1,38 @@
+<!-- 
+
+    Change the class of the div with class card to change animation
+
+    classes allowed
+
+    card
+    card1
+    card2 
+    card3
+
+-->
+
+<div class="modal-container-pp" *ngIf="exampleFour" >
+        <div class="lightbox-g">
+          <div class="card">   <!-- CHANGE THIS CLASS TO MODIFY ANIMATION OF THE COMPONENT  ( JUST CLASSES ALLOWED)-->
+            <p class="text-center"><b class="h3 ">¡Atencion!</b></p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat pulvinar elit eu pretium. 
+                Aliquam eu sapien sed felis sodales rhoncus.</p>
+              <div class="row">
+                <div class="col-12 col-md-6">
+
+                  <button class="btn-secondary" (click)="exampleFour = false;">
+                    Secondary
+                  </button>
+                </div>
+                <div class="col-12 col-md-6">
+
+                  <button class="btn-primary">
+                    Primary
+                  </button>
+                </div>
+              </div>
+    
+            </div>
+        </div>
+      </div>

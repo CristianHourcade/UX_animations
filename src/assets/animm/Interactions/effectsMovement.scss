@@ -1,0 +1,49 @@
+
+/************************************************************/
+/********************* EFFECT BELL **************************/
+/************************************************************/
+
+
+.effect-bell{
+    animation: bell $timeBell;
+}
+
+@keyframes bell{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: rotate(-4deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+}
+
+/************************************************************/
+/******************** EFFECT SCALE **************************/
+/************************************************************/
+
+.effect-scale{
+    animation: scaleXY $timeScaleXY;
+}
+
+@keyframes scaleXY{
+    
+    0%{
+        transform: scale(1.1,1.1)
+    }
+    50%{
+        transform: scale(1,1)
+    }
+    
+    75%{
+        transform: scale(1.1,1.1)
+    }
+    100%{
+        transform: scale(1,1)
+    }
+}

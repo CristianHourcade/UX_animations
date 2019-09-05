@@ -1,0 +1,67 @@
+/** Variables to modify - Librery CH - Animations **/
+
+
+/************************************************************ 
+*                                                           *
+*   Variables to use Text / Div / Box / Cards / etc         *
+*                                                           *
+*   Just change the seconds of the animation.               *
+*                                                           *
+*************************************************************/
+
+/*********************/
+/** LINEAR MOVEMENT **/
+/*********************/
+
+/** Entry Left **/
+$timeFromEntryLeft : 2s;
+$distanceEntryLeft: -100%;
+
+/** Entry Right **/
+$timeFromEntryRight : 2s;
+$distanceEntryRight: 100%;
+
+/** Entry Top **/
+$timeFromEntryTop: 2s;
+$distanceEntryTop: -100%;
+
+/** Entry Bottom **/
+$timeFromEntryDown: 2s;
+$distanceEntryDown: 100%;
+
+/** Entry Opacity In **/
+$timeFromEntryOpacityIn: 2s;
+
+/** Entry Opacity Out **/
+$timeFromEntryOpacityOut: 2s;
+
+/*********************/
+/** RADIAL MOVEMENT **/
+/*********************/
+
+/** Rotate 45° **/
+$timeRotate45 : 2s;
+
+/** Rotate 90° **/
+$timeRotate90 : 2s;
+
+/** Rotate 135° **/
+$timeRotate135 : 2s;
+
+/** Rotate 180° **/
+$timeRotate180 : 2s;
+
+/** Rotate 360° **/
+$timeRotate360 : 3s;
+
+/** Rotate 360° **/
+$timeRotate360Repeat : 2s;
+
+/*********************/
+/** EFFECTS MOVEMENT **/
+/*********************/
+
+$timeBell : 2s;
+$timeScaleXY : 2s;
+
+/************************************************************/

@@ -1,0 +1,118 @@
+
+/************************************************************/
+/********************* ROTATE 45° ***************************/
+/************************************************************/
+
+.rotate-45{
+    animation: rotate45 $timeRotate45;
+}
+
+@keyframes rotate45{
+    0% { 
+        transform : rotate(0deg)
+    }
+    50%{
+        transform: rotate(45deg);
+    }
+    100% {
+        transform : rotate(0deg);
+    }
+}
+
+/************************************************************/
+/********************* ROTATE 90° ***************************/
+/************************************************************/
+
+.rotate-90{
+    animation: rotate90 $timeRotate90;
+}
+
+@keyframes rotate90{
+    0% { 
+        transform : rotate(0deg)
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100% {
+        transform : rotate(0deg);
+    }
+}
+
+/************************************************************/
+/******************** ROTATE 135° ***************************/
+/************************************************************/
+
+.rotate-135{
+    animation: rotate135 $timeRotate135;
+}
+
+@keyframes rotate135{
+    0% { 
+        transform : rotate(0deg)
+    }
+    50%{
+        transform: rotate(135deg);
+    }
+    100% {
+        transform : rotate(0deg);
+    }
+}
+
+/************************************************************/
+/********************* ROTATE 180° **************************/
+/************************************************************/
+
+.rotate-180{
+    animation: rotate180 $timeRotate180;
+}
+
+@keyframes rotate180{
+    0% { 
+        transform : rotate(0deg)
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100% {
+        transform : rotate(0deg);
+    }
+}
+
+/************************************************************/
+/********************* ROTATE 360° ***************************/
+/************************************************************/
+
+.rotate-360{
+    animation: rotate360 $timeRotate360;
+}
+
+@keyframes rotate360{
+    0% { 
+        transform : rotate(0deg)
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100% {
+        transform : rotate(0deg);
+    }
+}
+
+
+/************************************************************/
+/**************** ROTATE 360° REPEAT *************************/
+/************************************************************/
+
+.rotate-360-repeat{
+    animation: rotate360 $timeRotate360Repeat infinite;
+}
+
+@keyframes rotate360{
+    0% { 
+        transform : rotate(0deg)
+    }
+    100% {
+        transform : rotate(360deg);
+    }
+}

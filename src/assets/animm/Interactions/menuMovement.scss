@@ -1,0 +1,94 @@
+.nav-icon{
+    height: 4px;
+    width: 30px;
+    background: #4a4a4a;
+    border-radius: 10px;
+}
+.cont-nav{
+    cursor: pointer;
+    width: 30px;
+}
+
+.iconBar1true{
+    animation: iconBar1 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar1{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(45deg);
+    }
+}
+.iconBar1false{
+    animation: iconBar1Invert 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar1Invert{
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.iconBar3true{
+    position: relative;
+    animation: iconBar3 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar3{
+    0%{
+        transform: rotate(0deg);
+        top:0px
+    }
+    100%{
+        top:-15px;
+        transform: rotate(-45deg);
+    }
+}
+
+.iconBar3false{
+    position: relative;
+    animation: iconBar3Invert 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar3Invert{
+    0%{
+        transform: rotate(-45deg);
+        top:-15px
+    }
+    100%{
+        top:0px;
+        transform: rotate(0deg);
+    }
+}
+
+.iconBar2false{
+    animation: iconBar2Invert 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar2Invert{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.iconBar2true{
+    animation: iconBar2 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes iconBar2{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

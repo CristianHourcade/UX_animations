@@ -1,0 +1,9 @@
+<!-- If you are in Angular Proyect, just copy the next code and create a new variable as isMenu type boolean and initialize in false -->
+
+<div class="cont-nav" (click)="isMenu = !isMenu">   
+    <div class="nav-icon my-1 iconBar1{{isMenu}}"></div>
+    <div class="nav-icon my-1 iconBar2{{isMenu}}"></div>
+    <div class="nav-icon my-1 iconBar3{{isMenu}}"></div>
+</div>
+
+<!-- Classes to active interacction : iconBar1true, iconBar2true, iconBar3true - iconBar1false, iconBar2false, iconBar3false -->

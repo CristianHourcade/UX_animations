@@ -1,0 +1,46 @@
+
+.upload-animation{
+    background: #e0e0e0ab;
+    border-radius: 5px 20px 5px 20px;
+
+    box-shadow: 0px 0px 5px -3px black;
+}
+
+.uploading{
+    padding: 5px 20px;
+    background-image: linear-gradient(45deg, #251bbdd1, #5165f1d6);
+    width: 1%;
+    border-radius: 5px 20px 5px 20px;
+    color: white;
+    text-shadow: 0px 1px 4px black;
+    animation: upload 5s;
+    text-align: center;
+    animation-fill-mode: forwards;
+
+}
+    
+.uploading::before{
+    content: "Cargando...";
+    animation: Carga 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Carga{
+    99%{
+        content: "Cargando...";
+    }
+    100%{
+        content: "¡Carga Completa!";
+        text-align: center;
+    }
+}
+@keyframes upload{
+    0%{
+        width: 1%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+

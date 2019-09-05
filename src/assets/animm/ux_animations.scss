@@ -1,0 +1,90 @@
+@import "_variables.scss"; // <--- Modify it
+
+/************************************************************/
+/*********** Librery Cristian Hourcade - Baufest ************/
+/************************************************************/
+/*  
+/* Thanks you to use my Library. You will can animated an
+/* elements just adding a class.                                                         
+/* SET YOUR TIME AND DISTANCES IN THE FILE _variables.scss  */      
+/*                                                          
+/************************************************************/
+
+/**  Lineal  Movement **/
+
+@import "Interactions/linealMovement.scss";
+
+/***************** Classes available ************************/
+/*
+/*  .entry-left = Scroll from left to right
+/*  .entry-right = Scroll from right to left
+/*  .entry-top = Scroll from top to bottom
+/*  .entry-bottom = Scroll from bottom to top
+/*  .entry-left = Scroll from left to right
+/*
+/*  .opacity-in = Show element - from opacity:0 to opacity:1
+/*  .opacity-out = Hidde element - from opacity:1 to opacity:0
+/*
+/************************************************************/
+
+/** Radial Movement **/
+
+@import "Interactions/radialMovement.scss";
+
+/***************** Classes Available ************************/
+/*
+/*  .rotate-45 = Rotation 45°
+/*  .rotate-90 = Rotation 90°
+/*  .rotate-180 = Rotation 180°
+/*  .rotate-360 = Rotation 360°
+/*
+/************************************************************/
+
+
+/** Effect Movement **/
+
+@import "Interactions/effectsMovement.scss";
+
+/***************** Classes available ************************/
+/*
+/*  .effect-bell = Movement likes Bell
+/*  .effect-scale = Movement to call to action.
+/*
+/************************************************************/
+
+
+/** Effect Movement **/
+
+@import "Interactions/loadingMovement.scss";
+
+/***************** Classes available ************************/
+/*
+/*  .upload-animation = Movement likes Bell
+/*  .uploading = Movement to call to action.
+/*
+/*  This interaction have some components, 
+/*  Look at Components/loadingBars
+/*
+/************************************************************/
+
+
+/** PopUps Movement **/
+
+@import "Interactions/PopUpsMovement.scss";
+
+/***************** Classes available ************************/
+/*
+/*  .card = type 1 PopUp.
+/*  .card2 = type 2 PopUp.
+/*  .card3 = type 3 PopUp.
+/*  .card4 = type 4 PopUp.
+/*
+/************************************************************/
+
+
+/** Menu Interaction **/
+
+@import "Interactions/menuMovement.scss";
+
+/***************** Copy the element HTML from Components/menuExample.html ************************/
+/*************************************************************************************************/

@@ -1,0 +1,102 @@
+.entry-left{
+    animation: entryLeft $timeFromEntryLeft;
+}
+
+@keyframes entryLeft{
+    0% { 
+        transform : translate(-100%,0);
+    }
+    100% {
+        transform : translate(0%,0);
+    }
+}
+
+/************************************************************/
+/***************** ENTRY RIGHT ******************************/
+/************************************************************/
+
+.entry-right{
+    animation: entryRight $timeFromEntryRight;
+}
+
+@keyframes entryRight{
+    0% { 
+        transform : translate(100%,0);
+    }
+    100% {
+        transform : translate(0%,0);
+    }
+}
+
+/************************************************************/
+/***************** ENTRY TOP ********************************/
+/************************************************************/
+
+.entry-top{
+    animation: entryTop $timeFromEntryTop;
+}
+
+@keyframes entryTop{
+    0% { 
+        transform : translate(0%,$distanceEntryTop);
+    }
+    100% {
+        transform : translate(0%,0);
+    }
+}
+
+
+/************************************************************/
+/***************** ENTRY DOWN *******************************/
+/************************************************************/
+
+.entry-down{
+    animation: entryDown $timeFromEntryDown;
+}
+
+@keyframes entryDown{
+    0% { 
+        transform : translate(0%,$distanceEntryDown);
+    }
+    100% {
+        transform : translate(0%,0);
+    }
+}
+
+/************************************************************/
+/***************** ENTRY OPACITY IN *************************/
+/************************************************************/
+
+.opacity-in{
+    animation: entryOpacityIn $timeFromEntryOpacityIn;
+}
+
+@keyframes entryOpacityIn{
+    0% { 
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/************************************************************/
+/***************** ENTRY OPACITY OUT ************************/
+/************************************************************/
+
+.opacity-out{
+    animation: entryOpacityOut $timeFromEntryOpacityOut;
+}
+
+@keyframes entryOpacityOut{
+    0% { 
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/************************************************************/
