@@ -11,7 +11,9 @@ export class Example1Component implements OnInit {
   stepTercerActive = "";
   isMenu = false;
   tercerPaso = false;
-
+  isTime3Step = true;
+  isSubmittedSuccess = false;
+  submittT = false;
   constructor() { }
 
   ngOnInit() {
@@ -24,5 +26,16 @@ export class Example1Component implements OnInit {
       this.stepTercerActive = "tercer_paso";
       this.tercerPaso = true;
     }, 1800);
+    setTimeout(() => {
+      this.isTime3Step = false;
+    }, 5000)
+  }
+
+  cargar(){
+    this.isSubmittedSuccess = !this.isSubmittedSuccess;
+
+    setTimeout(() => {
+      this.submittT = true;
+    },2500);
   }
 }

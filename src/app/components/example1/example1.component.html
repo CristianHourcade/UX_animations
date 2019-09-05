@@ -26,16 +26,21 @@
                 <div class="nav-icon my-1 iconBar3{{isMenu}}"></div>
             </div>
             <!--- Example one to Load Bar --->
-            <div class="b">
+            <div class="b" *ngIf="isTime3Step">
                 <i class="ball"></i>
             </div>
+            <img src="/assets/images/arm-up.png" class="atr" *ngIf="!isTime3Step">
+            <div class="tabla-abajo" *ngIf="!isTime3Step">
+                <div class="xs text-center rubberBand">
+                    <h3 *ngIf="!isSubmittedSuccess">¡Hola señor anonimo!</h3>
+                    <p *ngIf="!isSubmittedSuccess">¿Nos donarias 3USD?</p>
+                    <h3 *ngIf="submittT" [ngClass]="{'pago-ac':submittT}">¡Pago acreditado!</h3>
+                    <p *ngIf="submittT" [ngClass]="{'pago-ac':submittT}">Hemos recibido tu donación
+                        <br> ¡Muchas gracias!</p>
+                    <button class="baufest-btn enchinchada-btn success mb-3" [ngClass]="{'animate':isSubmittedSuccess}" (click)="cargar()">Donar 3 USD</button>
 
-            <div class="container">
-                <div class="loader-wrapper">
-                    <div class="loader"></div>
                 </div>
             </div>
-
         </div>
 
 
